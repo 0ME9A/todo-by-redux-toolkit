@@ -36,6 +36,7 @@ function AddPost(props) {
     <article className="w-full max-w-3xl gap-2 p-3 flex justify-between items-center bg-violet-800 rounded-lg">
       <div className="flex flex-col w-full gap-2">
         <input
+          autoFocus
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}

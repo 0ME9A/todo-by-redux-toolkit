@@ -3,6 +3,7 @@ import React from 'react';
 import { selectAllPost } from "./postSlice";
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
+import ReactionsButton from "./ReactionsButton";
 
 
 
@@ -17,8 +18,10 @@ function PostList(props) {
                 <p className="text-gray-300">{post.content}</p>
                 <PostAuthor userId={post.userId}/>
                 <TimeAgo timestamp={post.date}/>
+
+                <ReactionsButton post={post}/>
             </div>
-            <button type="button" id={post.id} className="px-3 py-2 bg-black rounded-lg self-end" >delete</button>
+            {/* <button type="button" id={post.id} className="px-3 py-2 bg-black rounded-lg self-end" >delete</button> */}
         </article>
     ))
 
