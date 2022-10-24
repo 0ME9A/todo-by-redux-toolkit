@@ -1,22 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import AddPost from "./features/post/AddPost";
+import PostList from "./features/post/PostList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App bg-violet-900 min-h-screen">
+      <h1 className="text-center font-bold text-xl p-5 text-white">Redux Project</h1>
+      <header className="App-header flex w-full flex-col items-center justify-center gap-2 p-3">
+        <AddPost/>
+        <PostList />
       </header>
     </div>
   );
