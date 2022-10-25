@@ -7,6 +7,7 @@ function App() {
     <div className="bg-violet-900 min-h-screen">
       <Header/>
       <Main/>
+      <hr />
       <Footer />
     </div>
   );
