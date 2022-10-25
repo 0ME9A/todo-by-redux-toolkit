@@ -40,14 +40,21 @@ function AddPost(props) {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full p-2 rounded-lg px-3" name="title" placeholder="Title" />
-        <input
+          name="title" 
+          placeholder="Title"
+          className="w-full p-2 rounded-lg px-3"/>
+        <textarea
           type="text"
           value={content}
           onChange={e => setContent(e.target.value)}
-          className="w-full p-2 rounded-lg px-3" name="desc" placeholder="Description" />
+          name="desc"
+          placeholder="Description"
+          className="w-full p-2 rounded-lg px-3 h-32 resize-y"
+        >
+        </textarea>
         <label
-          htmlFor='postAuthor'>
+          htmlFor='postAuthor'
+          className='px-2 text-gray-500'>
           Author:
         </label>
         <select
